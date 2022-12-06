@@ -1,0 +1,19 @@
+2 oka van egy komponensnek, hogy rendereljen
+    -   Az alap megjelenítés 
+    -   A komponens egy state-je frissítve lett (óra kattogás)
+
+Renderelés, amikor a react meghívja újra a komponensed (state update), aminek a state-je megváltozott.
+Vagyis az oldalnak csak az a része fog újratölteni, amiben változás is történt.
+
+Amikor a React kap egy változást, akkor maga a state egy pillanatképként adja tovább a Reactnek az információt, így az alapján fog megjeleníteni.
+Így, ha kiíratjuk alertben a state pillanatnyi képét de közben megnöveljük 5-el akkor az alert 0-át fog kiírni miközben előttünk már 5 van.
+Utána 5-nél +5 lesz 10, de az alert még mindig csak 5-öt ír. 
+
+Reactben ha objektummal vagy tömbbel akarunk számolni, nem azoknak az értékeiket változtatjuk meg, mert az rengeteg hibához vezethet az előző állítás miatt.
+Helyette létrehozunk egy újat, amit már megváltoztattunk és azt adjuk át a keretrendszernek.
+Funkciók:
+concat, [...arr] spread syntax 
+filter, slice 
+map 
+
+A push, pop, splice funkciók mutálják a tömbb értékeit így ezek nem lesznek jók nekünk.
